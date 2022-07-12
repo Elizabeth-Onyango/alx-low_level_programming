@@ -1,20 +1,18 @@
 #include "main.h"
-#include <string.h>
 
 /**
-* _strlen -> function to get the length of a string
-* @s: string pointer to passed to this function
-* Return: returns length of the string
+* _strlen - Use pointer to change value in memory
+* @s: Pointer to int s location
+*Return: Null/Void
 */
 
 int _strlen(char *s)
 {
-int len;
-
-for (; *s != '\0'; s++)
+int i = 0;
+while (*s)
 {
-len += 1;
+i++;
+s++;
 }
-return (len);
+return (i);
 }
-
