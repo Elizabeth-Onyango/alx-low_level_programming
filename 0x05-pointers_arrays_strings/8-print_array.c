@@ -1,25 +1,21 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-* print_array - Prints n elements of an array of integers
+* print_array - Use pointer to change value in memory
 * @a: Array of integers
-* @n: Number of elements of the array to be printed
-* Return: void
+* @n: Number of elements in an array
+*Return: Null/Void
 */
 
 void print_array(int *a, int n)
 {
-int j;
+int i;
 
-for (j = 0; j < n; j++)
-{
-printf("%d", a[j]);
-
-if (j != (n - 1))
-{
-printf(", ");
-}
-printf("\n");
-}
+for (i = 0; i < n; i++)
+	{
+	printf("%d", a[i]);
+	if (i != n - 1)
+	printf(", ");
+	}
+	printf("\n");
 }
