@@ -10,8 +10,8 @@
 
 int sqtChecker(int min, int max, int m)
 {
-
 	long int guess;
+
 	if (max >= min)
 	{
 		guess = min + (max - min) / 2;
