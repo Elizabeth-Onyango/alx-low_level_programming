@@ -1,17 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main -  prints all arguements
-* @argc: argument count
-* @argv: array of pointers to CLI arguement
+* main - the entry point
+* @argc: argument counter
+* @argv: array of pointer to strings
 * Return: 0
-**/
+*/
 
 int main(int argc, char *argv[])
 {
 
 	int i;
-	for (i = 0; i < argc; i++)
+
+	i = 0;
+	while (i < argc)
+	{
 		printf("%s\n", argv[i]);
-	return (0);
+		i++;
+	}
+		return (0);
 }
